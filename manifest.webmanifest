@@ -1,0 +1,1 @@
+{"name":"Jumbo Launcher","short_name":"Jumbo","description":"Launcher oficial del ecosistema Jumbo.","start_url":"./","scope":"./","display":"standalone","background_color":"#04130a","theme_color":"#062b13","orientation":"portrait","icons":[{"src":"assets/logo-jumbo.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]}
