@@ -1,3 +1,15 @@
-export const VERSION='Alpha 0.2';
-export const NOTES={title:'Jumbo Alpha 0.2',summary:'Esta actualizacion agrega estructura modular, Index Store, modo app, temas visuales y documentacion oficial.',items:['El proyecto se separa por carpetas para que cada modulo pueda crecer sin romper los demas.','Index Store reemplaza el guardado basico y permite proyectos mas grandes dentro del navegador.','El Dock inferior queda definido como accesos rapidos, no como duplicado de tarjetas.','Ajustes agrega tema oscuro, claro, verde Jumbo y selector de fondo.','Jumbo queda preparado para agregarse a la pantalla de inicio como app web.']};
-export function notesHTML(){return `<span class="tag">Versiones</span><h2>${NOTES.title}</h2><p>${NOTES.summary}</p>${NOTES.items.map(x=>`<div class="panel"><p>${x}</p></div>`).join('')}`;}
+export const VERSION='Alpha 0.3';
+export const NOTES={
+ title:'Jumbo Alpha 0.3: Pantallas Completas',
+ summary:'Esta actualizacion cambia la forma de navegar en Jumbo. Los modulos principales ya no se abren como ventanas pequenas: ahora funcionan como pantallas completas. Las ventanas emergentes quedan para resumenes, avisos y acciones rapidas.',
+ items:[
+  'Nuevo Proyecto, Mis Proyectos y Ajustes pasan a pantalla completa para sentirse como una app real.',
+  'Las ventanas emergentes se conservan para resumenes de actualizacion, documentacion y acciones rapidas.',
+  'Ajustes agrega lenguaje en espanol e ingles.',
+  'Ajustes agrega color de botones para personalizar el estilo visual de Jumbo.',
+  'El Dock inferior ahora se puede personalizar: el usuario decide que tres accesos rapidos quiere abajo.',
+  'Mis Proyectos agrega funciones experimentales: renombrar, duplicar, eliminar, marcar favorito y registrar ultima vez usado.',
+  'Las funciones experimentales se activan desde Ajustes porque todavia no pertenecen al motor Jumbo Engine final.'
+ ]
+};
+export function notesHTML(){return '<span class="tag">Versiones</span><h2>'+NOTES.title+'</h2><p>'+NOTES.summary+'</p>'+NOTES.items.map(x=>'<div class="panel"><p>'+x+'</p></div>').join('');}
