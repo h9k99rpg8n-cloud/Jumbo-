@@ -9,7 +9,7 @@
 <meta name="apple-mobile-web-app-title" content="Jumbo">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="stylesheet" href="styles/main.css">
-<title>Jumbo Launcher Alpha 0.3</title>
+<title>Jumbo Launcher Alpha 0.4</title>
 </head>
 <body>
 <main id="home" class="screen launcher active">
@@ -31,6 +31,12 @@
 <header class="page-head"><button class="back" onclick="Jumbo.closePage()">Volver</button><span id="pageTitle" class="page-title">Jumbo</span></header>
 <div id="pageBody" class="page-body"></div>
 </section>
+<section id="projectView" class="project-view">
+<div class="engine-bar"><button onclick="Jumbo.closeProject3D()">← Salir</button><b>Jumbo Engine 3D</b><span>Alpha 0.4</span></div>
+<canvas id="jumboCanvas"></canvas>
+<div class="engine-help">Toca y arrastra para mover la camara. Pellizca para acercar o alejar.</div>
+</section>
+<script src="https://cdn.babylonjs.com/babylon.js"></script>
 <script type="module" src="src/main.js"></script>
 </body>
 </html>
