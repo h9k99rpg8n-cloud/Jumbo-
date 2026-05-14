@@ -9,7 +9,7 @@
 <meta name="apple-mobile-web-app-title" content="Jumbo">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="stylesheet" href="styles/main.css">
-<title>Jumbo Launcher Alpha 0.2</title>
+<title>Jumbo Launcher Alpha 0.3</title>
 </head>
 <body>
 <main id="home" class="screen launcher active">
@@ -25,8 +25,12 @@
 <header class="topbar"><div class="brand"><img src="assets/logo-jumbo.svg" alt="Jumbo"><span>Jumbo Launcher</span></div><span id="clock" class="time">--:--</span></header>
 <section id="ecosystem" class="ecosystem"></section>
 <section id="window" class="window"><div class="whead"><strong id="wtitle">Jumbo</strong><button onclick="Jumbo.closeWindow()">Cerrar</button></div><div id="wbody" class="wbody"></div></section>
-<nav class="dock"><button onclick="Jumbo.showApp('Nuevo Proyecto')">Nuevo</button><button onclick="Jumbo.showApp('Mis Proyectos')">Proyectos</button><button onclick="Jumbo.showApp('Ajustes')">Ajustes</button></nav>
+<nav id="dock" class="dock"></nav>
 </main>
+<section id="appPage" class="page">
+<header class="page-head"><button class="back" onclick="Jumbo.closePage()">Volver</button><span id="pageTitle" class="page-title">Jumbo</span></header>
+<div id="pageBody" class="page-body"></div>
+</section>
 <script type="module" src="src/main.js"></script>
 </body>
 </html>
